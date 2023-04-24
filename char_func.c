@@ -6,5 +6,10 @@
 
 int char_func(va_list ch)
 {
-	return (-1);
+	char c;
+
+	c = va_arg(ch, int);
+	_putchar(c);
+
+	return (1);
 }
