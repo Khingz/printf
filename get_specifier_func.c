@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** get_specifier_func - gets appropraite specifier function
+/**
+ * get_specifier_func - gets appropraite specifier function
  * @specifier: specifier type
  * Return: Null or pointer address
  */
