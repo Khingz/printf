@@ -9,6 +9,8 @@
 /* function prototypes */
 int _printf(const char *format, ...);
 int _putchar(char c);
+int char_func(va_list ch);
+int string_func(va_list str);
 
 /* struct definition */
 /**
