@@ -20,6 +20,23 @@ int _printf(const char *format, ...)
 			i++;
 			continue;
 		}
+		if (format[i] == '\0')
+		{
+			return (count);
+		}
+		sp_f = get_specifier_func(&format[i + 1]);
+		if (sp_f)
+		{
+			count += sp_f(params);
+			i = i + 2;
+			continue;
+		}
+		if (!format[i + 1])
+		{
+			return (-1);
+		}
+		_putchar(formar[i]);
+		count++;
 	}
 
 	va_end(params);
