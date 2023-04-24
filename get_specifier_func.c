@@ -1,3 +1,9 @@
+#include "main.h"
+
+/** get_specifier_func - gets appropraite specifier function
+ * @specifier: specifier type
+ * Return: Null or pointer address
+ */
 int (*get_specifier_func(const char *specifier))(va_list)
 {
 	int i = 0;
@@ -12,6 +18,6 @@ int (*get_specifier_func(const char *specifier))(va_list)
 		if (sps[i].sp[0] == (*specifier))
 			return (sps[i].f);
 		i++;
-	i}
+	}
 	return (NULL);
 }

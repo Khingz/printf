@@ -35,10 +35,14 @@ int _printf(const char *format, ...)
 		{
 			return (-1);
 		}
-		_putchar(formar[i]);
+		_putchar(format[i]);
 		count++;
+		if (format[i + 1] == '%')
+			i += 2;
+		else
+			i++;
 	}
 
 	va_end(params);
-	return (0);
+	return (count);
 }
