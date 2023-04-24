@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * char_func - print char to standard output
  * @ch: character to print

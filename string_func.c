@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * string_func - print a string to standard output
  * @str: string to be printed
