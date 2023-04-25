@@ -10,33 +10,36 @@ int ten_power(int len);
 */
 int int_dec_func(va_list val)
 {
-	int len, pow_ten, count, i, temp_num, digit;
+	int len, pow_ten, count, i, num, digit;
 	
-	temp_num = va_arg(val, int);
-	if (temp_num == 0)
+	num = va_arg(val, int);
+	count = 0;
+	if (num != 0)
+	{
+		if (num < 0)
+		{
+			_putchar('-');
+			count++;
+		}
+		len = _length(num);
+		pow_ten = ten_power(len);
+		for (i = 1; i <= len; i++)
+		{
+			digit = num / pow_ten;
+			if (num < 0)
+				_putchar((digit * -1) + 48);
+			else
+				_putchar(digit + '0');
+			count++;
+			num -= digit * pow_ten;
+			pow_ten /= 10;
+		}
+	}
+	else
 	{
 		_putchar('0');
 		return (1);
 	}
-	len = _length(temp_num);
-	pow_ten = ten_power(len);
-
-	for (i = 1; i <= len; i++)
-	{
-		digit = temp_num / pow_ten;
-		if (temp_num < 0)
-		{
-			_putchar((digit * -1) + 48);
-		}
-		else
-		{
-			_putchar(digit + '0');
-			count++;
-			temp_num -= digit * pow_ten;
-			pow_ten /= 10;
-		}
-	}
-
 	return (count);
 }
 
@@ -49,10 +52,11 @@ int _length(int num)
 {
 	int len;
 
+	len = 0;
 	while (num != 0)
 	{
-		len++;
 		num /= 10;
+		len++;
 	}
 	return (len);
 }
@@ -67,8 +71,8 @@ int ten_power(int len)
 	int power, i;
 
 	power = 1;
-	i = 0;
-	while (i < len)
+	i = 1;
+	while (i <= len - 1)
 	{
 		power *= 10;
 		i++;
