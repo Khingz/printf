@@ -19,7 +19,7 @@ int int_dec_func(va_list val)
 		return (1);
 	}
 	len = _length(temp_num);
-	pow_len = ten_power(len);
+	pow_ten = ten_power(len);
 
 	for (i = 1; i <= len; i++)
 	{
