@@ -1,8 +1,10 @@
-int binary_func(va_list num)
+#include "main.h"
+
+int binary_func(va_list n)
 {
 	int num, mod, count;
 
-	num = va_arg(num, int);
+	num = va_arg(n, int);
 	count = 0;
 		
 	if (num != 0)
@@ -10,14 +12,14 @@ int binary_func(va_list num)
 		while (num != 0)
 		{
 			mod = num % 2;
-			if (mod = 5)
+			if (mod % 2 == 0)
 			{
-				_putchar('1');
+				_putchar('0');
 				count++;
 			}
 			else
 			{
-				_putchar('0);
+				_putchar('1');
 				count++;
 			}
 			num = num / 2;
