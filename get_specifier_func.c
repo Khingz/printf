@@ -12,6 +12,8 @@ int (*get_specifier_func(const char *specifier))(va_list)
 		{"c", char_func},
 		{"s", string_func},
 		{"%", percent_func},
+		{"i", int_dec_func},
+		{"d", int_dec_func},
 		{NULL, NULL}
 	};
 
