@@ -48,5 +48,9 @@ The `printf()` function is used to output formatted text to the console. It take
 
 ## Contributors
 
-@khingz
-@ama-dii
+<a href="https://github.com/khingz">
+  <img src="https://github.com/khingz.png?size=50">
+</a>
+<a href="https://github.com/ama-dii">
+  <img src="https://github.com/ama-dii.png?size=50">
+</a>
