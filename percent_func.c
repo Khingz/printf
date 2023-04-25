@@ -5,8 +5,9 @@
  *
  * Return: 1.
  */
-int percent_func(va_list args__attribute__((unused)))
+int percent_func(va_list arg)
 {
+	arg = arg;
 	_putchar('%');
 	return (1);
 }
