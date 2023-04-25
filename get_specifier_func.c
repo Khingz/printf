@@ -11,6 +11,7 @@ int (*get_specifier_func(const char *specifier))(va_list)
 	sps_t sps[] = {
 		{"c", char_func},
 		{"s", string_func},
+		{"%", percent_func},
 		{NULL, NULL}
 	};
 
