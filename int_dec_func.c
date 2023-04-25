@@ -11,7 +11,7 @@ int ten_power(int len);
 int int_dec_func(va_list val)
 {
 	int len, pow_ten, count, i, num, digit;
-	
+
 	num = va_arg(val, int);
 	count = 0;
 	if (num != 0)
