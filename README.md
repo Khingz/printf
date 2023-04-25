@@ -48,5 +48,5 @@ The `printf()` function is used to output formatted text to the console. It take
 
 ## Contributors
 
-Kingsley Akpan
-Amadi Glory
+@khingz
+@ama-dii
