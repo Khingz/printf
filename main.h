@@ -12,6 +12,7 @@ int _putchar(char c);
 int char_func(va_list ch);
 int string_func(va_list str);
 int (*get_specifier_func(const char *specifier))(va_list);
+int percent_func(va_list args__attribute__((unused));
 
 /* struct definition */
 /**
