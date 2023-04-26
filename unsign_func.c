@@ -10,7 +10,7 @@ int unsign_func(va_list u_int)
 	int count = 0;
 
 	num = va_arg(u_int, unsigned int);
-	if (n != 0)
+	if (num != 0)
 	{
 		tmp_num = num;
 		len = 0;
