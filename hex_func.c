@@ -17,23 +17,15 @@ int hex_func(unsigned int n, unsigned int c)
 		num = n;
 		len = 0;
 		if (c == 0)
-		{
 			gap = 'A' - ':';
-		}
 		else
-		{
 			gap = 'a' - ':';
-		}
 		while (num != 0)
-		{
 			num /= 16;
 			len++;
-		}
 		pow_16 = 1;
 		for (j = 1; j <= len - 1; j++)
-		{
 			pow_16 *= 16;
-		}
 		for (j = 1; j <= len; j++)
 		{
 			digit = n / pow_16;
@@ -47,10 +39,8 @@ int hex_func(unsigned int n, unsigned int c)
 		}
 	}
 	else
-	{
 		_putchar('0');
 		return (1);
-	}
 	return (count);
 }
 /**

@@ -20,6 +20,7 @@ int (*get_specifier_func(const char *specifier))(va_list)
 		{"o", octal_func},
 		{"x", x_func},
 		{"X", X_func},
+		{"u", unsign_func},
 		{NULL, NULL}
 	};
 
