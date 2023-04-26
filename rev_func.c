@@ -22,8 +22,8 @@ int rev_func(va_list rev)
 	}
 	for (i -= 1 ; i >= 0; i--)
 	{
-		_putchar(st[i]);
-		j++;
+		_putchar(str[i]);
+		count++;
 	}
 	return (count);
 }

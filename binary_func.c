@@ -15,7 +15,7 @@ int binary_func(va_list n)
 
 	num = va_arg(n, int);
 	count = 0;
-	
+
 	if (num != 0)
 	{
 		count = int_to_bin(num);
@@ -28,9 +28,9 @@ int binary_func(va_list n)
 	return (count);
 }
 
-/** 
+/**
  * int_to_bin - converts int to binary
- * num: number to be converted to binary
+ * @num: number to be converted to binary
  * Return: count
  */
 int int_to_bin(unsigned int num)
