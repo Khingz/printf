@@ -16,7 +16,7 @@ int hex_func(unsigned int n, unsigned int c)
 	{
 		num = n;
 		len = 0;
-		if (c = 0)
+		if (c == 0)
 		{
 			gap = 'A' - ':';
 		}

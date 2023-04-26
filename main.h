@@ -18,6 +18,8 @@ int binary_func(va_list num);
 int rot_func(va_list str);
 int octal_func(va_list num);
 int rev_func(va_list rev);
+int x_func(va_list x);
+int X_func(va_list X);
 
 /* struct definition */
 /**
