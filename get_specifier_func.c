@@ -15,6 +15,7 @@ int (*get_specifier_func(const char *specifier))(va_list)
 		{"i", int_dec_func},
 		{"d", int_dec_func},
 		{"b", binary_func},
+		{"R", rot_func},
 		{NULL, NULL}
 	};
 

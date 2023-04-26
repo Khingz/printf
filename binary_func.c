@@ -2,6 +2,12 @@
 
 int int_to_bin(unsigned int num);
 
+/**
+  * binary_func - function that converts binary of a number
+  *@n: number to be converted to binary
+  * Return: count
+ **/
+
 int binary_func(va_list n)
 {
 	int count;
@@ -22,8 +28,10 @@ int binary_func(va_list n)
 	return (count);
 }
 
-/*
- *
+/** 
+ * int_to_bin - converts int to binary
+ * num: number to be converted to binary
+ * Return: count
  */
 int int_to_bin(unsigned int num)
 {
@@ -36,5 +44,5 @@ int int_to_bin(unsigned int num)
 	}
 	count++;
 	_putchar((num % 2) + '0');
-	return count;
+	return (count);
 }
