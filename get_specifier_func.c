@@ -18,6 +18,8 @@ int (*get_specifier_func(const char *specifier))(va_list)
 		{"R", rot_func},
 		{"r", rev_func},
 		{"o", octal_func},
+		{"x", x_func},
+		{"X", X_func},
 		{NULL, NULL}
 	};
 
