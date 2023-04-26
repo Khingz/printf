@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * rot_func - encodes a string into rot13.
-  * str: string to convert
+  * @str: string to convert
   * Return: count
   */
 int rot_func(va_list str)

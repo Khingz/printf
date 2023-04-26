@@ -4,7 +4,7 @@
 * @num: unsigned to be converted
 * Return: size the output
 */
-int print_octal(va_list num)
+int octal_func(va_list num)
 {
 	unsigned int len, pow_oct, j, digit, _num, tmp_num;
 	int count = 0;
@@ -12,7 +12,7 @@ int print_octal(va_list num)
 	_num = va_arg(num, unsigned int);
 	if (_num != 0)
 	{
-		_num = tmp_num;
+		tmp_num = _num;
 		len = 0;
 		while (tmp_num != 0)
 		{
@@ -27,7 +27,7 @@ int print_octal(va_list num)
 		}
 		for (j = 1; j <= len; j++)
 		{
-			digit = _num / powten;
+			digit = _num / pow_oct;
 			_putchar(digit + '0');
 			count++;
 			_num -= digit * pow_oct;

@@ -16,6 +16,8 @@ int percent_func(va_list args);
 int int_dec_func(va_list val);
 int binary_func(va_list num);
 int rot_func(va_list str);
+int octal_func(va_list num);
+int rev_func(va_list rev);
 
 /* struct definition */
 /**
